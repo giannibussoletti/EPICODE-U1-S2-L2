@@ -32,7 +32,8 @@ const lampada = {
     curr: "euro",
   },
 }
-
+console.log("Oggetto lampada prima delle modifiche")
+console.log(lampada)
 // l'ordine delle proprietà non influenza il funzionamento dell'oggetto, i vari broswer possono riordinare le varie key in base a differenti fattori, per esempio CHROME le mette in ordine alfabetico.
 
 //come faccio ad ottenere uno specifico valore?
@@ -52,3 +53,11 @@ lampada[value] // true
 // ma non si ha magari il nome della chiave! si ha però una variabile il cui VALORE è il nome della chiave!
 //lampada.value non esiste perché value non è definito in lampada
 // le parentesi quadre invece vanno a vedere il valore di value e lo va a cercare nell'oggetto lampada
+
+//LE I VALORI DELLE CHIAVI SONO MODIFICABILI
+lampada.interruttore = false
+lampada.materiale = "legno"
+lampada.temperaturaLuce = "7000k"
+
+console.log("Oggetto lampada dopo le modifiche")
+console.log(lampada)
