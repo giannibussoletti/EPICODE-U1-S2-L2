@@ -29,7 +29,7 @@ console.log(valoriBooleani.length) // 3
 console.log(oggetti.length) // 3
 
 // Per sapere la posizione  dell'INDICE dell'ultimo elemento di un array si va lenght - 1
-console.log(nomi.length - 1) // 4
+console.log(nomi.length - 1) // 3
 
 // per estrapolare un elemento di un array si scrive nomeArray[indice]
 nomi[2]
