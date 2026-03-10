@@ -39,3 +39,42 @@ nomi[0] // "Stefano"
 nomi[1] // "Noemi"
 nomi[2] // "Roberto"
 nomi[3] // "Camilla"
+
+// MODIFICO GLI ARRAY
+nomi[0] = "Francesco"
+nomi[3] = "Martina"
+
+const pets = [
+  "gatto", // 0
+  "cane", // 1
+  "criceto", // 2
+  "pescerosso", // 3
+  "tarantola", // 4
+  "salamandra", // 5
+]
+
+// METODI DEGLI ARRAY
+// AGGIUNGO UN ELEMENTO IN CODA DELL'ARRAY (alla fine)
+pets.push("rinoceronte")
+// ora pets ha lunghezza 7, e pets[6] è diventato "rinoceronte"
+
+// AGGIUNGO UN ELEMENTO IN CIMA ALL'ARRAY (all'inizio)
+pets.unshift("topo")
+// l'array è diventato ['topo', 'gatto', 'cane', 'criceto', 'pescerosso', 'tarantola', 'salamandra', 'rinoceronte'
+// ora la lunghezza length è 8
+
+// RIMUOVO UN ELEMENTO IN CODA ALL'ARRAY (alla fine)
+pets.pop()
+// RIMOVIOMO UN ELEMENTO IN CIMA ALL'ARRAY (all'inizio)
+pets.shift()
+//questi ultimi due non hanno bisogno di nessun argomento (cose scritte tra parentesi), perché vanno a togliere e quindi non c'è bisogno di dichiarare nulla
+
+// RIMUOVERE UN ELEMENTO IN MEZZO ALLA LISTA
+pets.splice(3, 1)
+// richiede la posizione da quale iniziare a rimuovere gli elementi
+// in questo caso andrà a togliere solo "pescerosso" perché la posizione richiesta è 3 e il numero di array da rimuovere è 1
+pets.splice(3, 3)
+// qui partirebbe sempre da pesce rosso ma cancellerebbe fino a "salamandra"
+
+// INVERTIRE UN ARRAY
+pets.reverse() // modifica l'array su cui viene evocato

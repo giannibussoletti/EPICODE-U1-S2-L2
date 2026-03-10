@@ -58,6 +58,7 @@ lampada[value] // true
 lampada.interruttore = false
 lampada.materiale = "legno"
 lampada.temperaturaLuce = "7000k"
+lampada.prezzo.curr = "drakma"
 
 console.log("Oggetto lampada dopo le modifiche")
 console.log(lampada)
